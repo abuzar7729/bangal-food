@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu Management - Bangal Food</title>
+
+  <!-- ✅ Make sure this path is correct -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍛 Bangal Food</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="order-management.html">Order</a></li>
+        <li><a href="menu-management.html" class="active">Menu</a></li>
+        <li><a href="table-reservation.html">Reservation</a></li>
+        <li><a href="billing-payment.html">Billing</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="customer-loyalty.html">Loyalty</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="menu-page">
+    <section class="filter-bar">
+      <h2>Our Delicious Menu</h2>
+      <div class="filter-buttons">
+        <button onclick="filterMenu('all')">All</button>
+        <button onclick="filterMenu('veg')">Veg</button>
+        <button onclick="filterMenu('nonveg')">Non-Veg</button>
+        <button onclick="filterMenu('dessert')">Dessert</button>
+        <button onclick="filterMenu('drink')">Drink</button>
+      </div>
+    </section>
+
+    <section id="menuGrid" class="menu-grid">
+      <!-- JS will render menu items here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bangal Food. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ✅ Make sure the JS file path is correct -->
+  <script src="js/menu-management.js"></script>
+</body>
+</html>

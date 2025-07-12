@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Management - Bangal Food</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍛 Bangal Food</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="order-management.html" class="active">Order</a></li>
+        <li><a href="menu-management.html">Menu</a></li>
+        <li><a href="table-reservation.html">Reservation</a></li>
+        <li><a href="billing-payment.html">Billing</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="customer-loyalty.html">Loyalty</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="order-main">
+    <section class="menu-items">
+      <h2>Select Items to Order</h2>
+      <div id="menuList" class="menu-list">
+        <!-- Items loaded by JS -->
+      </div>
+    </section>
+
+    <aside class="cart">
+      <h2>Your Cart</h2>
+      <div id="cartItems" class="cart-items">
+        <p>Your cart is empty.</p>
+      </div>
+      <div class="cart-total">
+        <strong>Total:</strong> ₹<span id="totalPrice">0</span>
+      </div>
+      <button id="checkoutBtn" disabled>Checkout</button>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 Bangal Food. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/order-management.js"></script>
+</body>
+</html>

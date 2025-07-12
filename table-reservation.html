@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Table Reservation - Bangal Food</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍽️ Reserve Your Table - Bangal Food</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="order-management.html">Order</a></li>
+        <li><a href="menu-management.html">Menu</a></li>
+        <li><a href="table-reservation.html" class="active">Reservation</a></li>
+        <li><a href="billing-payment.html">Billing</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="customer-loyalty.html">Loyalty</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="reservation-page">
+    <section class="reservation-form-container">
+      <h2>Book Your Table Now!</h2>
+      <form action="https://formspree.io/f/xqabznqv" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="tel" name="phone" placeholder="Phone Number" required />
+  <input type="email" name="email" placeholder="Email Address" required />
+  <input type="date" name="date" required />
+  <input type="time" name="time" required />
+  <select name="guests" required>
+    <option value="">Number of Guests</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3-4">3-4</option>
+    <option value="5+">5+</option>
+  </select>
+  <button type="submit">Reserve Now</button>
+</form>
+
+      <div id="reservationSuccess" class="success-message" style="display:none;">
+        🎉 Reservation Confirmed! See you soon at Bangal Food!
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bangal Food. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/reservation.js"></script>
+</body>
+</html>

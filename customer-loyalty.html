@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Loyalty - Bangal Food</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎁 Customer Loyalty Program - Bangal Food</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="order-management.html">Order</a></li>
+        <li><a href="menu-management.html">Menu</a></li>
+        <li><a href="table-reservation.html">Reservation</a></li>
+        <li><a href="billing-and-payment.html">Billing</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="customer-loyalty.html" class="active">Loyalty</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="loyalty-page">
+    <section class="loyalty-card">
+      <h2>Welcome, <span id="customerName">Rahul Das</span> 👋</h2>
+      <p>Points Earned: <span id="points">720</span></p>
+      <p>Membership Level: <span id="membership">Gold</span> 🏅</p>
+      <button onclick="addPoints(50)">🎉 Add 50 Points</button>
+    </section>
+
+    <section class="loyalty-offers">
+      <h3>Exclusive Discounts</h3>
+      <ul>
+        <li>🍱 10% off on Combo Meals (Gold & Platinum)</li>
+        <li>🥤 Free Drink with every order above ₹500</li>
+        <li>🎂 Birthday Surprise Gift!</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bangal Food. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/loyalty.js"></script>
+</body>
+</html>

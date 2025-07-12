@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Billing & Payment - Bangal Food</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Billing & Payment</h1>
+  </header>
+
+  <main>
+
+    <section class="billing">
+      <h2>Invoice</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="invoiceBody"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Subtotal</td>
+            <td id="subtotal">₹0.00</td>
+          </tr>
+          <tr>
+            <td colspan="3">Tax (5%)</td>
+            <td id="tax">₹0.00</td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Grand Total</strong></td>
+            <td id="total">₹0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section class="payment">
+      <h2>Payment Details</h2>
+      <form id="paymentForm">
+        <input type="text" id="cardName" placeholder="Cardholder Name" required><br><br>
+        <input type="text" id="cardNumber" placeholder="Card Number" required><br><br>
+        <input type="text" id="expiry" placeholder="MM/YY" required><br><br>
+        <input type="text" id="cvv" placeholder="CVV" required><br><br>
+        <button type="submit">Pay Now</button>
+      </form>
+      <p id="paymentSuccess" style="display:none; color:green;">🎉 Payment Successful!</p>
+    </section>
+  </main>
+
+  <script src="js/billing.js"></script>
+</body>
+</html>

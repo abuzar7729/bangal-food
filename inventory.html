@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory - Bangal Food</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>📦 Inventory Management - Bangal Food</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="order-management.html">Order</a></li>
+        <li><a href="menu-management.html">Menu</a></li>
+        <li><a href="table-reservation.html">Reservation</a></li>
+        <li><a href="billing-and-payment.html">Billing</a></li>
+        <li><a href="inventory.html" class="active">Inventory</a></li>
+        <li><a href="customer-loyalty.html">Loyalty</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="inventory-page">
+    <section class="form-section">
+      <h2>Add Inventory Item</h2>
+      <form id="inventoryForm">
+        <input type="text" id="itemName" placeholder="Item Name" required />
+        <input type="number" id="itemQty" placeholder="Quantity" required />
+        <input type="text" id="itemCategory" placeholder="Category" required />
+        <button type="submit">Add Item</button>
+      </form>
+    </section>
+
+    <section class="inventory-list">
+      <h2>Current Stock</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="inventoryTable">
+          <!-- JS will populate rows -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bangal Food. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/inventory.js"></script>
+</body>
+</html>
